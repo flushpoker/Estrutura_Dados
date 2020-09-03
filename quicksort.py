@@ -4,6 +4,7 @@ def criaVetorEstatico(tamanho):
         vetor.append(None)
     return vetor
 
+contTroca = 0
 def quicksort(lista, inicio, fim):
     if inicio < fim:
         p = particionar(lista, inicio, fim)
@@ -11,6 +12,7 @@ def quicksort(lista, inicio, fim):
         quicksort(lista, p + 1, fim)
 
 def particionar(lista, inicio, fim):
+    global contTroca
     fim -= 1
     pivor = lista[fim]
     i = inicio
@@ -20,9 +22,12 @@ def particionar(lista, inicio, fim):
             lista[j] = lista[i]
             lista[i] = aux
             i += 1
+            contTroca += 1
+            
     aux1 = lista[i]
     lista[i] = lista[fim]
     lista[fim] = aux1
+    contTroca += 1
     print('Merge atual:  {}'.format(lista))
     return i
 
@@ -34,3 +39,4 @@ for i in range(0, lenArray):
     lista[i] = int(input('{}° valor: '.format(i + 1)))
 print('Lista inicial: {}'.format(lista))
 quicksort(lista, 0, lenArray)
+print('Quantidade de trocar total: {}'.format(contTroca))
