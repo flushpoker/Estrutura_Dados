@@ -7,9 +7,7 @@ def criaVetorEstatico(tamanho):
 def quicksort(lista, inicio, fim):
     if inicio < fim:
         p = particionar(lista, inicio, fim)
-        # recursivamente na sublista à esquerda (menores)
         quicksort(lista, inicio, p - 1)
-        # recursivamente na sublista à direita (maiores)
         quicksort(lista, p + 1, fim)
 
 def particionar(lista, inicio, fim):
@@ -17,13 +15,14 @@ def particionar(lista, inicio, fim):
     pivor = lista[fim]
     i = inicio
     for j in range(inicio, fim):
-        # j sempre avança, pois representa o elementa em análise
-        # e delimita os elementos maiores que o pivô
         if lista[j] <= pivor:
-            lista[j], lista[i] = lista[i], lista[j]
-            # incrementa-se o limite dos elementos menores que o pivô
+            aux = lista[j]
+            lista[j] = lista[i]
+            lista[i] = aux
             i += 1
-    lista[i], lista[fim] = lista[fim], lista[i]
+    aux1 = lista[i]
+    lista[i] = lista[fim]
+    lista[fim] = aux1
     print('Merge atual:  {}'.format(lista))
     return i
 

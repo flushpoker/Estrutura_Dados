@@ -29,9 +29,6 @@ def merge(lista, inicio, meio, fim):
         lista_direita[i] = lista[i + meio]
         k += 1
 
-    #lista_esquerda = lista[inicio:meio]
-    #lista_direita = lista[meio:fim]
-
     topo_direita, topo_esquerda = 0, 0
     for i in range(inicio, fim):
         if topo_esquerda >= len(lista_esquerda):
