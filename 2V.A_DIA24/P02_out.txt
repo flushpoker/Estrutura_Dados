@@ -1,0 +1,286 @@
+novo jogo comecou.
+etapa de inicializacao.
+minerador 1 inserido na mina 1.
+minerador 2 inserido na mina 2.
+minerador 3 inserido na mina 3.
+minerador 4 inserido na mina 4.
+minerador 5 inserido na mina 5.
+minerador 6 inserido na mina 6.
+minerador 7 inserido na mina 7.
+minerador 8 inserido na mina 0.
+minerador 9 inserido na fila de espera da mina 1.
+minerador 10 inserido na fila de espera da mina 2.
+8(0) 1(0) 2(0) 3(0) 4(0) 5(0) 6(0) 7(0) 
+turno 1 comecou.
+8(1) 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(1) 
+minerador 5 a caminho da base.
+base: 0.
+turno 2 comecou.
+8(2) 1(2) 2(2) 3(2) 4(2) vazia 6(2) 7(2) 
+base: 0.
+turno 3 comecou.
+8(3) 1(3) 2(3) 3(3) 4(3) vazia 6(3) 7(3) 
+minerador 2 a caminho da base.
+minerador 6 a caminho da base.
+minerador 5 depositou 1 minerio(s) na base.
+base: 1.
+turno 4 comecou.
+8(4) 1(4) 10(0) 3(4) 4(4) vazia vazia 7(4) 
+minerador 3 a caminho da base.
+base: 1.
+turno 5 comecou.
+8(5) 1(5) 10(1) vazia 4(5) vazia vazia 7(5) 
+minerador 8 a caminho da base.
+minerador 1 a caminho da base.
+minerador 4 a caminho da base.
+minerador 5 retornou as minas.
+minerador 5 inserido na mina 5.
+minerador 2 depositou 3 minerio(s) na base.
+minerador 6 depositou 3 minerio(s) na base.
+base: 7.
+turno 6 comecou.
+vazia 9(0) 10(2) vazia vazia 5(0) vazia 7(6) 
+minerador 3 depositou 4 minerio(s) na base.
+base: 11.
+turno 7 comecou.
+vazia 9(1) 10(3) vazia vazia 5(1) vazia 7(7) 
+minerador 5 a caminho da base.
+minerador 2 retornou as minas.
+minerador 2 colidiu com minerador 10 na mina 2.
+minerador 2 inserido na mina 3.
+minerador 6 retornou as minas.
+minerador 6 inserido na mina 6.
+minerador 8 depositou 5 minerio(s) na base.
+minerador 1 depositou 5 minerio(s) na base.
+minerador 4 depositou 5 minerio(s) na base.
+base: 26.
+turno 8 comecou.
+vazia 9(2) 10(4) 2(0) vazia vazia 6(0) 7(8) 
+minerador 9 a caminho da base.
+minerador 3 retornou as minas.
+minerador 3 colidiu com minerador 2 na mina 3.
+minerador 3 inserido na mina 4.
+base: 26.
+turno 9 comecou.
+vazia vazia 10(5) 2(1) 3(0) vazia 6(1) 7(9) 
+minerador 8 retornou as minas.
+minerador 8 inserido na mina 0.
+minerador 1 retornou as minas.
+minerador 1 inserido na mina 1.
+minerador 4 retornou as minas.
+minerador 4 colidiu com minerador 3 na mina 4.
+minerador 4 inserido na mina 5.
+minerador 5 depositou 1 minerio(s) na base.
+base: 27.
+turno 10 comecou.
+8(0) 1(0) 10(6) 2(2) 3(1) 4(0) 6(2) 7(10) 
+minerador 10 a caminho da base.
+minerador 9 depositou 2 minerio(s) na base.
+base: 29.
+fim de jogo. 29 minerios coletados.
+
+novo jogo comecou.
+etapa de inicializacao.
+minerador 1 inserido na mina 1.
+minerador 2 inserido na mina 2.
+minerador 3 inserido na mina 3.
+minerador 4 inserido na mina 4.
+minerador 5 inserido na mina 5.
+minerador 6 inserido na mina 0.
+minerador 7 inserido na fila de espera da mina 1.
+minerador 8 inserido na fila de espera da mina 2.
+6(0) 1(0) 2(0) 3(0) 4(0) 5(0) 
+turno 1 comecou.
+6(1) 1(1) 2(1) 3(1) 4(1) 5(1) 
+minerador 5 a caminho da base.
+base: 0.
+turno 2 comecou.
+6(2) 1(2) 2(2) 3(2) 4(2) vazia 
+base: 0.
+turno 3 comecou.
+6(3) 1(3) 2(3) 3(3) 4(3) vazia 
+minerador 6 a caminho da base.
+minerador 2 a caminho da base.
+minerador 5 depositou 1 minerio(s) na base.
+base: 1.
+turno 4 comecou.
+vazia 1(4) 8(0) 3(4) 4(4) vazia 
+minerador 3 a caminho da base.
+base: 1.
+turno 5 comecou.
+vazia 1(5) 8(1) vazia 4(5) vazia 
+minerador 1 a caminho da base.
+minerador 4 a caminho da base.
+minerador 5 retornou as minas.
+minerador 5 inserido na mina 5.
+minerador 6 depositou 3 minerio(s) na base.
+minerador 2 depositou 3 minerio(s) na base.
+base: 7.
+turno 6 comecou.
+vazia 7(0) 8(2) vazia vazia 5(0) 
+minerador 3 depositou 4 minerio(s) na base.
+base: 11.
+turno 7 comecou.
+vazia 7(1) 8(3) vazia vazia 5(1) 
+minerador 5 a caminho da base.
+minerador 6 retornou as minas.
+minerador 6 inserido na mina 0.
+minerador 2 retornou as minas.
+minerador 2 colidiu com minerador 8 na mina 2.
+minerador 2 inserido na mina 3.
+minerador 1 depositou 5 minerio(s) na base.
+minerador 4 depositou 5 minerio(s) na base.
+base: 21.
+turno 8 comecou.
+6(0) 7(2) 8(4) 2(0) vazia vazia 
+minerador 3 retornou as minas.
+minerador 3 colidiu com minerador 2 na mina 3.
+minerador 3 inserido na mina 4.
+base: 21.
+turno 9 comecou.
+6(1) 7(3) 8(5) 2(1) 3(0) vazia 
+minerador 8 a caminho da base.
+minerador 1 retornou as minas.
+minerador 1 colidiu com minerador 7 na mina 1.
+minerador 1 inserido na mina 2.
+minerador 4 retornou as minas.
+minerador 4 colidiu com minerador 3 na mina 4.
+minerador 4 inserido na mina 5.
+minerador 5 depositou 1 minerio(s) na base.
+base: 22.
+turno 10 comecou.
+6(2) 7(4) 1(0) 2(2) 3(1) 4(0) 
+base: 22.
+fim de jogo. 22 minerios coletados.
+
+novo jogo comecou.
+etapa de inicializacao.
+minerador 1 inserido na mina 1.
+minerador 2 inserido na mina 2.
+minerador 3 inserido na mina 3.
+minerador 4 inserido na mina 4.
+minerador 5 inserido na mina 5.
+minerador 6 inserido na mina 6.
+minerador 7 inserido na mina 7.
+minerador 8 inserido na mina 8.
+vazia 1(0) 2(0) 3(0) 4(0) 5(0) 6(0) 7(0) 8(0) vazia vazia vazia vazia vazia vazia 
+turno 1 comecou.
+vazia 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(1) 8(1) vazia vazia vazia vazia vazia vazia 
+minerador 5 a caminho da base.
+base: 0.
+turno 2 comecou.
+vazia 1(2) 2(2) 3(2) 4(2) vazia 6(2) 7(2) 8(2) vazia vazia vazia vazia vazia vazia 
+base: 0.
+turno 3 comecou.
+vazia 1(3) 2(3) 3(3) 4(3) vazia 6(3) 7(3) 8(3) vazia vazia vazia vazia vazia vazia 
+minerador 2 a caminho da base.
+minerador 6 a caminho da base.
+minerador 5 depositou 1 minerio(s) na base.
+base: 1.
+turno 4 comecou.
+vazia 1(4) vazia 3(4) 4(4) vazia vazia 7(4) 8(4) vazia vazia vazia vazia vazia vazia 
+minerador 3 a caminho da base.
+base: 1.
+turno 5 comecou.
+vazia 1(5) vazia vazia 4(5) vazia vazia 7(5) 8(5) vazia vazia vazia vazia vazia vazia 
+minerador 1 a caminho da base.
+minerador 4 a caminho da base.
+minerador 8 a caminho da base.
+minerador 5 retornou as minas.
+minerador 5 inserido na mina 5.
+minerador 2 depositou 3 minerio(s) na base.
+minerador 6 depositou 3 minerio(s) na base.
+base: 7.
+turno 6 comecou.
+vazia vazia vazia vazia vazia 5(0) vazia 7(6) vazia vazia vazia vazia vazia vazia vazia 
+minerador 3 depositou 4 minerio(s) na base.
+base: 11.
+turno 7 comecou.
+vazia vazia vazia vazia vazia 5(1) vazia 7(7) vazia vazia vazia vazia vazia vazia vazia 
+minerador 5 a caminho da base.
+minerador 2 retornou as minas.
+minerador 2 inserido na mina 2.
+minerador 6 retornou as minas.
+minerador 6 inserido na mina 6.
+minerador 1 depositou 5 minerio(s) na base.
+minerador 4 depositou 5 minerio(s) na base.
+minerador 8 depositou 5 minerio(s) na base.
+base: 26.
+turno 8 comecou.
+vazia vazia 2(0) vazia vazia vazia 6(0) 7(8) vazia vazia vazia vazia vazia vazia vazia 
+minerador 3 retornou as minas.
+minerador 3 inserido na mina 3.
+base: 26.
+turno 9 comecou.
+vazia vazia 2(1) 3(0) vazia vazia 6(1) 7(9) vazia vazia vazia vazia vazia vazia vazia 
+minerador 1 retornou as minas.
+minerador 1 inserido na mina 1.
+minerador 4 retornou as minas.
+minerador 4 inserido na mina 4.
+minerador 8 retornou as minas.
+minerador 8 inserido na mina 8.
+minerador 5 depositou 1 minerio(s) na base.
+base: 27.
+turno 10 comecou.
+vazia 1(0) 2(2) 3(1) 4(0) vazia 6(2) 7(10) 8(0) vazia vazia vazia vazia vazia vazia 
+base: 27.
+fim de jogo. 27 minerios coletados.
+
+novo jogo comecou.
+etapa de inicializacao.
+minerador 1 inserido na mina 1.
+minerador 2 inserido na mina 2.
+minerador 3 inserido na mina 0.
+minerador 4 inserido na fila de espera da mina 1.
+minerador 5 inserido na fila de espera da mina 2.
+minerador 6 inserido na fila de espera da mina 0.
+minerador 7 inserido na fila de espera da mina 1.
+minerador 8 inserido na fila de espera da mina 2.
+minerador 9 inserido na fila de espera da mina 0.
+minerador 10 inserido na fila de espera da mina 1.
+3(0) 1(0) 2(0) 
+turno 1 comecou.
+3(1) 1(1) 2(1) 
+base: 0.
+turno 2 comecou.
+3(2) 1(2) 2(2) 
+base: 0.
+turno 3 comecou.
+3(3) 1(3) 2(3) 
+minerador 2 a caminho da base.
+base: 0.
+turno 4 comecou.
+3(4) 1(4) 5(0) 
+minerador 3 a caminho da base.
+base: 0.
+turno 5 comecou.
+6(0) 1(5) 5(1) 
+minerador 1 a caminho da base.
+minerador 5 a caminho da base.
+base: 0.
+turno 6 comecou.
+6(1) 4(0) 8(0) 
+minerador 2 depositou 3 minerio(s) na base.
+base: 3.
+turno 7 comecou.
+6(2) 4(1) 8(1) 
+minerador 3 depositou 4 minerio(s) na base.
+base: 7.
+turno 8 comecou.
+6(3) 4(2) 8(2) 
+minerador 6 a caminho da base.
+minerador 1 depositou 5 minerio(s) na base.
+minerador 5 depositou 1 minerio(s) na base.
+base: 13.
+turno 9 comecou.
+9(0) 4(3) 8(3) 
+minerador 2 retornou as minas.
+minerador 2 inserido na fila de espera da mina 2.
+base: 13.
+turno 10 comecou.
+9(1) 4(4) 8(4) 
+minerador 3 retornou as minas.
+minerador 3 inserido na fila de espera da mina 0.
+base: 13.
+fim de jogo. 13 minerios coletados.
+
