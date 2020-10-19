@@ -1,0 +1,58 @@
+novo jogo comecou.
+etapa de inicializacao.
+minerador 1 inserido na mina 1.
+minerador 2 inserido na mina 2.
+minerador 3 inserido na mina 0.
+minerador 4 inserido na fila de espera da mina 1.
+minerador 5 inserido na fila de espera da mina 2.
+minerador 6 inserido na fila de espera da mina 0.
+minerador 7 inserido na fila de espera da mina 1.
+minerador 8 inserido na fila de espera da mina 2.
+minerador 9 inserido na fila de espera da mina 0.
+minerador 10 inserido na fila de espera da mina 1.
+3(0) 1(0) 2(0) 
+turno 1 comecou.
+3(1) 1(1) 2(1) 
+base: 0.
+turno 2 comecou.
+3(2) 1(2) 2(2) 
+base: 0.
+turno 3 comecou.
+3(3) 1(3) 2(3) 
+minerador 2 a caminho da base.
+base: 0.
+turno 4 comecou.
+3(4) 1(4) 8(0) 
+minerador 3 a caminho da base.
+base: 0.
+turno 5 comecou.
+9(0) 1(5) 8(1) 
+minerador 1 a caminho da base.
+base: 0.
+turno 6 comecou.
+9(1) 10(0) 8(2) 
+minerador 2 depositou 3 minerio(s) na base.
+base: 3.
+turno 7 comecou.
+9(2) 10(1) 8(3) 
+minerador 9 a caminho da base.
+minerador 3 depositou 4 minerio(s) na base.
+base: 7.
+turno 8 comecou.
+vazia 10(2) 8(4) 
+minerador 1 depositou 5 minerio(s) na base.
+base: 12.
+turno 9 comecou.
+vazia 10(3) 8(5) 
+minerador 8 a caminho da base.
+minerador 2 retornou as minas.
+minerador 2 inserido na mina 2.
+base: 12.
+turno 10 comecou.
+vazia 10(4) 2(0) 
+minerador 3 retornou as minas.
+minerador 3 inserido na mina 0.
+minerador 9 depositou 2 minerio(s) na base.
+base: 14.
+fim de jogo. 14 minerios coletados.
+

@@ -56,8 +56,6 @@ class Mina:
             self.mineradores[funcao_hash] = novo_no
             indice = funcao_hash
             print('minerador {} inserido na mina {}.'.format(chave, funcao_hash))
-            arquivo_out.write('minerador '+ str(chave) +' inserido na mina '+ str(funcao_hash) +'.\n')
-            
         else:
             i = (funcao_hash % self.tamanho) + 1
             while i != funcao_hash:
@@ -65,8 +63,6 @@ class Mina:
                     self.mineradores[i] = novo_no
                     print('minerador {} colidiu com minerador {} na mina {}.'.format(chave, self.mineradores[funcao_hash].chave, funcao_hash))
                     print('minerador {} inserido na mina {}.'.format(chave, i))
-                    arquivo_out.write('minerador '+ str(chave) +' colidiu com minerador '+ str(self.mineradores[funcao_hash].chave) +' na mina '+ str(funcao_hash) +'.\n')
-                    arquivo_out.write('minerador '+ str(chave) +' inserido na mina '+ str(i) +'.\n')
                     indice = i
                     i = funcao_hash
                     
@@ -93,7 +89,6 @@ class Mina:
             mina.mineradores[funcao_hash].cabeca = self.cabeca
         
         print('minerador {} inserido na fila de espera da mina {}.'.format(chave, funcao_hash))
-        arquivo_out.write('minerador '+ str(chave) +' inserido na fila de espera da mina '+ str(funcao_hash) +'.\n')
 
     def inserir_minerador(self, chave, capacidade_coleta, distBase, tamanho):
         if mina.qtdAtual >= mina.tamanho:
@@ -105,16 +100,14 @@ class Mina:
         for i in range(mina.tamanho):
             if mina.mineradores[i]:
                 print('{}({}) '.format(mina.mineradores[i].chave, mina.mineradores[i].inventario), end='')
-                arquivo_out.write(str(mina.mineradores[i].chave) + '('+ str(mina.mineradores[i].inventario) +') ')
             else:
                 print('vazia ',end='')
-                arquivo_out.write('vazia ')
         print('')
-        arquivo_out.write('\n')
 
 menu = int(input('\n1 - Inserir dados por aquivo \n2 - Inserir dados manualmente \n0 - Sair: '))
 dados_iniciais = []
-arquivo_out = open('E:\Documentos\Visual Studio\python\Estrutura_Dados\\2V.A_DIA24\eteste_out.txt', 'w')
+tListaMina = -3 #modelo para pegar o tamanho da mina (a cada 3 linhas pega o primeiro elemento da linha)
+tListaMinarador = -3
 if menu == 1:
     print('\n ------- Inserir Por Arquivo -------')
     caminho = input('Informe o caminho do arquivo .txt: ')
@@ -137,20 +130,17 @@ elif menu == 2:
 
 for r in range(0, len(dados_iniciais), 3):
     print('novo jogo comecou.')
-    arquivo_out.write('novo jogo comecou.\n')
     mina = Mina(int(dados_iniciais[r].split(' ')[0]), 0) #pega o primeiro elemento da string
     base = Base()
 
     print('etapa de inicializacao.')
-    arquivo_out.write('etapa de inicializacao.\n')
     i_minerador = 0
-    for _ in range(0, int(dados_iniciais[r].split(' ')[1])):
-        #chave, capacidade_coleta, distBase, tamanho
-        mina.inserir_minerador(int(dados_iniciais[r + 1].split(' ')[i_minerador]), int(dados_iniciais[r + 1].split(' ')[i_minerador + 1]), int(dados_iniciais[r].split(' ')[2]), mina.tamanho)
+    for _ in range(0, int(dados_iniciais[tListaMina + 3].split(' ')[1])):
+        mina.inserir_minerador(int(dados_iniciais[tListaMinarador + 4].split(' ')[i_minerador]), int(dados_iniciais[tListaMinarador + 4].split(' ')[i_minerador + 1]), int(dados_iniciais[tListaMina + 3].split(' ')[2]), mina.tamanho)
         i_minerador += 2
 
 
-    for ii in range(0, int(dados_iniciais[r].split(' ')[3]) + 1):
+    for ii in range(0, int(dados_iniciais[tListaMina + 3].split(' ')[3]) + 1):
         mina.imprimir_mineradores()
 
         for i in range(0, mina.tamanho):
@@ -159,7 +149,7 @@ for r in range(0, len(dados_iniciais), 3):
                     mina.mineradores[i].inventario += 1
                 else:
                     print('minerador {} a caminho da base.'.format(mina.mineradores[i].chave))
-                    arquivo_out.write('minerador '+ str(mina.mineradores[i].chave) +' a caminho da base.\n')
+
                     base.mineradores.append(mina.mineradores[i]) #criar um append
                     if mina.mineradores[i].cabeca:
                         if mina.mineradores[i].cabeca.proximo:
@@ -167,6 +157,8 @@ for r in range(0, len(dados_iniciais), 3):
                     else:
                         mina.mineradores[i] = None
                     mina.qtdAtual -= 1
+
+                        
 
         if base.mineradores:
             for i in range(0, len(base.mineradores)):
@@ -177,7 +169,6 @@ for r in range(0, len(dados_iniciais), 3):
                         else:
                             base.minerios += base.mineradores[i].inventario
                             print('minerador {} depositou {} minerio(s) na base.'.format(base.mineradores[i].chave, base.mineradores[i].inventario))
-                            arquivo_out.write('minerador '+ str(base.mineradores[i].chave) +' depositou '+ str(base.mineradores[i].inventario) +' minerio(s) na base.\n')
                             base.mineradores[i].vaiBase = False
                             base.mineradores[i].distBaseAtual = base.mineradores[i].distBase
 
@@ -189,19 +180,13 @@ for r in range(0, len(dados_iniciais), 3):
                             base.mineradores[i].distBaseAtual = base.mineradores[i].distBase
                             
                             print('minerador {} retornou as minas.'.format(base.mineradores[i].chave))
-                            arquivo_out.write('minerador '+ str(base.mineradores[i].chave) +' retornou as minas.\n')
                             mina.inserir_minerador(base.mineradores[i].chave, base.mineradores[i].capacidade_coleta, base.mineradores[i].distBase, mina.tamanho)
                             base.mineradores[i] = None
         if ii != 0:
             print('base: {}.'.format(base.minerios))
-            arquivo_out.write('base: '+ str(base.minerios) +'.\n')
-        if ii != int(dados_iniciais[r].split(' ')[3]):
+        if ii != int(dados_iniciais[tListaMina + 3].split(' ')[3]):
             print('turno {} comecou.'.format(ii + 1)) 
-            arquivo_out.write('turno '+ str((ii + 1)) +' comecou.\n')
 
 
-    print('fim de jogo. {} minerios coletados.\n'.format(base.minerios))
-    arquivo_out.write('fim de jogo. '+ str(base.minerios) +' minerios coletados.\n\n')
-
-    mina = None
-    base = None
+    print('fim de jogo. {} minerios coletados.'.format(base.minerios))
+    print('\n\n')
